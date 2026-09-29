@@ -1,0 +1,17 @@
+:root{--bg:#070c1a;--pn:#0d1530;--line:rgba(140,190,255,.16);--tx:#eef3fb;--mut:#9aa8c2;--cy:#22d3ee;--bl:#3b82f6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:400 1rem/1.6 "Space Grotesk",system-ui,sans-serif;display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+.lg{height:36px}.tl{font-weight:700}.tl span{color:var(--cy)}
+.sb{background:var(--pn);border-right:1px solid var(--line);padding:1.2rem;display:flex;flex-direction:column;gap:1.5rem}
+.sb nav{display:flex;flex-direction:column;gap:.2rem}.sb a,.sb button{color:var(--mut);text-decoration:none;padding:.65rem .8rem;border-radius:8px;background:none;border:0;font:inherit;text-align:left;cursor:pointer}
+.sb a:hover,.sb button:hover{color:var(--tx);background:rgba(255,255,255,.05)}.sb a[aria-current]{color:var(--cy);background:rgba(34,211,238,.1)}
+:focus-visible{outline:2px solid var(--cy);outline-offset:2px}
+.am{padding:2rem;min-width:0}h1{margin:0 0 1.5rem;font-size:1.9rem}h2{font-size:1.2rem;margin-top:2rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}.c{background:var(--pn);border:1px solid var(--line);border-radius:12px;padding:1.3rem}.c span{color:var(--mut);display:block}.c b{font-size:2.2rem;color:var(--cy)}
+.empty{color:var(--mut);border:1px dashed var(--line);border-radius:12px;padding:1.5rem}
+.lw{grid-column:1/-1;display:grid;place-items:center;padding:1.5rem}body[data-page=login]{display:block}
+#lf{width:min(400px,100%);background:var(--pn);border:1px solid var(--line);border-radius:14px;padding:2rem;display:grid;gap:1rem}
+label{display:grid;gap:.4rem;color:var(--mut);font-size:.9rem}input{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:8px;padding:.8rem;color:var(--tx);font:inherit}
+.b{padding:.85rem;border-radius:8px;border:0;font:700 1rem inherit;font-family:inherit;background:linear-gradient(135deg,var(--cy),var(--bl));color:#031018;cursor:pointer}.b.g{background:none;border:1px solid var(--line);color:var(--tx);font-weight:400}
+#lm{color:var(--cy);min-height:1.4em;margin:0}
+@media(max-width:800px){body{grid-template-columns:1fr}.sb{border-right:0;border-bottom:1px solid var(--line)}.sb nav{flex-direction:row;overflow-x:auto}.sb a,.sb button{white-space:nowrap}.am{padding:1.2rem}}
+body.student{--cy:#60a5fa;--bl:#818cf8}
